@@ -10,6 +10,11 @@
 - `assets/img/team-*.jpg`: fotos del equipo (idealmente ≥ 1000 px de ancho).
 - `assets/video/ceo-odoo.mp4` + `assets/img/ceo-odoo-poster.jpg`: video de la CEO.
 
+## Imagen al compartir el enlace
+- Archivo: `assets/img/og-cover.jpg` (1200×630).
+- En `index.html` reemplazar `https://TU-USUARIO.github.io/TU-REPO/` por la URL real en `og:url`, `og:image` y `twitter:image` (deben ser absolutas).
+- WhatsApp, Facebook y LinkedIn guardan la vista previa en caché: si cambias la imagen, vuelve a generar la vista previa (Facebook Sharing Debugger / LinkedIn Post Inspector).
+
 ## Al lanzar a producción
 - En `index.html`: cambiar `noindex, nofollow` por `index, follow` y descomentar el canonical.
 
